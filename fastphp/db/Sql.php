@@ -144,7 +144,7 @@ class Sql
         $names = array();
         foreach ($data as $key => $value) {
             $fields[] = sprintf("`%s`", $key);
-            $names[] = sprintf(":%s", $key);
+            $names[] = sprintf(":%s", $value);
         }
 
         $field = implode(',', $fields);
